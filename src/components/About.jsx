@@ -4,11 +4,10 @@ export const About = () => {
   return (
     <div className='h-full bg-white '>
       <div className='flex mx-auto m-20 gap-60 items-center justify-center'>
-      <div className='bg-green-500 ml-20 h-60 w-72 p-4 rounded-lg'>
-          about
-      </div>
+      <div className='bg-green-500 ml-20 h-60 w-72 p-4 rounded-lg'></div>
       <div className='flex flex-col'> 
-        <div className='text-3xl text-blue-300 inline border-t-4 border-gray-500 '>
+        <div className='border-t-2 border-gray-500 w-8 p-1'></div>
+        <div className='text-3xl text-blue-300 inline '>
           About us
         </div>
         <div>

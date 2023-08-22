@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from "react-scroll";
 import heroImage from "../assets/heroImage.png"
+import heroImage1 from "../assets/heroImage1.png"
+
 
 export const Home = () => {
   return (
@@ -32,7 +34,7 @@ export const Home = () => {
                 </div>
                 <div className='relative'>
                      <div className='bg-white h-60 w-60 p-4 rounded-lg'>
-                        <img src={heroImage} alt='my profile' className='mx-auto mb-10' />
+                        <img src={heroImage1} alt='my profile' className='mx-auto mb-10' />
                       </div>
                       <button className='absolute bottom-1.5 translate-x-1/4  bg-white border border-blue-500 text-blue-500 px-4 py-2 mt-2 items-center rounded-md cursor-pointer'>
                       Segun Adedoyin <br /> 
