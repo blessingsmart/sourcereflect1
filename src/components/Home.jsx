@@ -20,26 +20,27 @@ export const Home = () => {
                 </div>
             </div>
 
-            <div className='flex gap-10 mt-10 md:mt-40 md:pt-56'>
+            <div className='flex gap-10 mt-10 md:mt-40 md:pt-56 bg-cover bg-center' style={{ heroImage: `url(${heroImage})` }}>
                 <div className='relative'>
                       <div className='bg-white h-60 w-60 p-4 rounded-lg'>
                         <img src={heroImage} alt='my profile' className='mx-auto mb-10' />
                       </div>
-                      <button className='absolute bottom-1.5 translate-x-1/4  bg-white border border-blue-500 text-blue-500 px-4 py-2 mt-2 flex items-center rounded-md cursor-pointer'>
-                      Popoola Samson<br />
-                      FOUNDER
+                      <button className='absolute bottom-1.5 translate-x-1/4  bg-white border border-blue-500 text-blue-500 px-4 py-2 mt-2 items-center rounded-md cursor-pointer'>
+                      Popoola Samson <br />
+                      <p className='font-bold'>FOUNDER</p>
                       </button>
                 </div>
                 <div className='relative'>
                      <div className='bg-white h-60 w-60 p-4 rounded-lg'>
                         <img src={heroImage} alt='my profile' className='mx-auto mb-10' />
                       </div>
-                      <button className='absolute bottom-1.5 translate-x-1/4  bg-white border border-blue-500 text-blue-500 px-4 py-2 mt-2 flex items-center rounded-md cursor-pointer'>
-                      Segun Adedoyin <br />CO-FOUNDER 
+                      <button className='absolute bottom-1.5 translate-x-1/4  bg-white border border-blue-500 text-blue-500 px-4 py-2 mt-2 items-center rounded-md cursor-pointer'>
+                      Segun Adedoyin <br /> 
+                      <p className='font-bold'>CO-FOUNDER </p>
                       </button>
                 </div>
+              </div>
             </div>
-        </div>
     </div>
   )
 }
