@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 import heroImage from "../assets/heroImage.png"
 import heroImage1 from "../assets/heroImage1.png"
 
