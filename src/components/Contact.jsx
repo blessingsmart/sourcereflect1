@@ -1,6 +1,5 @@
 import React from 'react'
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
+import { FaInstagram, FaTwitter, FaWhatsapp, FaFacebook } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export const Contact = () => {
@@ -9,28 +8,37 @@ export const Contact = () => {
       id: 1,
       child: (
         <>
-           <FaLinkedin size={30}/>
+           <FaTwitter size={30}/>
         </>
       ),
-      href: 'https://www.linkedin.com/in/blessing.eno'
+      href: 'https://www.twitter.com/sourcereflect1'
     },
     {
       id: 2,
       child: (
         <>
-           <FaGithub size={30}/>
+           <FaWhatsapp size={30}/>
         </>
       ),
-      href: 'https://github.com/blessingsmart',
+      href: 'https://wa.me/message/YL3HPLETTPM5O1?src=qr',
     },
     {
       id: 3,
       child: (
         <>
-           <HiOutlineMail size={30}/>
+           <FaInstagram size={30}/>
         </>
       ),
-      href: 'mailto:bublessingsmart@gmail.com',
+      href: 'https://instagram.com/sourcereflect?igshid=MmIzYWVlNDQ5Yg==',
+    },
+    {
+      id: 3,
+      child: (
+        <>
+           <FaFacebook size={30}/>
+        </>
+      ),
+      href: 'https://www.facebook.com/sourcereflec?mibextid=LQQJ4d',
     },
   ];
   const links = [
@@ -74,12 +82,12 @@ export const Contact = () => {
                   </ul>
                   <div className='flex flex-col items-center mt-10'>
                     <div className='text-3xl text-blue-300'>Get In Touch</div>
-                        <ul className='flex pt-5'>
+                        <ul className='flex justify-between items-center  pt-5'>
                           {social.map(({id, child, href}) => (
                             <li 
                               key={id} 
                               className={
-                                `flex justify-between items-center hover:scale-105`
+                                `hover:scale-105 m-1`
                               }
                             >
                               <a 
