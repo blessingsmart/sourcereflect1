@@ -1,6 +1,5 @@
 import { NavBar } from "./components/NavBar";
-import Trainings from "./components/Trainings";
-import { About } from "./components/About";
+import {About} from "./components/About"
 import { Home } from "./components/Home";
 import { AboutMain } from "./Pages/AboutMain";
 import { Contact } from "./components/Contact";
@@ -17,7 +16,6 @@ function App() {
           <Route path="/AboutMain" element={<AboutMain />} />
         </Routes>
         <About />
-        <Trainings />
         <Testimonials />
         <Contact />
       </div>
