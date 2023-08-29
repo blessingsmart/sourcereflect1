@@ -68,7 +68,7 @@ export const Contact = () => {
     <div className='bg-gradient-to-r from-green-600 to-lime-600 w-full'>
       <div className='flex flex-col items-center sm:flex-row p-20 text-white sm:justify-between'>
                   <div className='flex flex-col items-center'> 
-                    <h1 className='text-3xl text-blue-300 pb-5'>CONTACT US</h1>
+                    <h1 className='md:text-3xl text-lg text-blue-300 pb-5'>CONTACT US</h1>
                     <p>Email: welldoericon@gmail.com</p>
                     <p>Phone: +234 708 451 9109</p>
                   </div>
@@ -81,7 +81,7 @@ export const Contact = () => {
                       ))}      
                   </ul>
                   <div className='flex flex-col items-center mt-10'>
-                    <div className='text-3xl text-blue-300'>Get In Touch</div>
+                    <div className='md:text-3xl text-lg text-blue-300'>Get In Touch</div>
                         <ul className='flex justify-between items-center  pt-5'>
                           {social.map(({id, child, href}) => (
                             <li 

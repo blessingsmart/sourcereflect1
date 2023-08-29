@@ -6,9 +6,9 @@ import heroImage1 from "../assets/heroImage1.png"
 
 export const Home = () => {
   return (
-    <div className='h-screen bg-gradient-to-r from-green-600 to-lime-600'>
+    <div className='h-full bg-gradient-to-r from-green-600 to-lime-600'>
 
-      <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center pt-5 md:flex-row md:gap-32'>
+      <div className='max-w-screen-lg md:mx-auto mx-10 flex flex-col items-center justify-center pt-5 md:flex-row md:gap-32'>
         <div className="flex flex-col justify-center h-full">
           <h2 className="text-4xl sm:text-6xl font-bold text-white mt-20 md:mt-0">
             Welcome to Sourcereflect

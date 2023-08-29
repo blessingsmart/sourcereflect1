@@ -3,7 +3,6 @@ import {About} from "./components/About"
 import { Home } from "./components/Home";
 import { AboutMain } from "./Pages/AboutMain";
 import { Contact } from "./components/Contact";
-import { Testimonials } from "./components/Testimonials";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -16,7 +15,6 @@ function App() {
           <Route path="/AboutMain" element={<AboutMain />} />
         </Routes>
         <About />
-        <Testimonials />
         <Contact />
       </div>
     </Router>
