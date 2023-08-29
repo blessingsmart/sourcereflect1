@@ -2,46 +2,45 @@ import React from 'react'
 import { BsArrowRight } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 import Slider from './Gallery';
-import heroImage from "../assets/heroImage.png"
-import heroImage1 from "../assets/heroImage1.png"
+import SLIDER1 from "../assets/SLIDE1.jpeg"
+import SLIDER2 from "../assets/SLIDE2.jpeg"
+import SLIDER3 from "../assets/SLIDE3.jpeg"
+import SLIDER4 from "../assets/SLIDE4.jpeg"
+import SLIDER5 from "../assets/SLIDE5.jpeg"
+import SLIDER6 from "../assets/SLIDE6.jpeg"
+import SLIDER7 from "../assets/SLIDE7.jpeg"
+import SLIDER8 from "../assets/SLIDE8.jpeg"
+import SLIDER9 from "../assets/SLIDE9.jpeg"
+import SLIDER10 from "../assets/SLIDE10.jpeg"
+import SLIDER11 from "../assets/SLIDE11.jpeg"
+import SLIDER12 from "../assets/SLIDE12.jpeg"
 
 export const About = () => {
   const sliderData = [
     {
-      image: heroImage,
-      heading: "Slide One",
-      desc: "This is the description of slide one Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi quos quas, voluptatum nesciunt illum exercitationem.",
-    },
+      image: SLIDER1,},
     {
-      image: heroImage1,
-      heading: "Slide Two",
-      desc: "This is the description of slide two Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi quos quas, voluptatum nesciunt illum exercitationem.",
-    },
+      image: SLIDER2,},
     {
-      image: heroImage1,
-      heading: "Slide Three",
-      desc: "This is the description of slide three Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi quos quas, voluptatum nesciunt illum exercitationem.",
-    },
+      image: SLIDER3,},
     {
-      image: heroImage1,
-      heading: "Slide Three",
-      desc: "This is the description of slide three Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi quos quas, voluptatum nesciunt illum exercitationem.",
-    },
+      image: SLIDER4,},
     {
-      image: heroImage1,
-      heading: "Slide Three",
-      desc: "This is the description of slide three Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi quos quas, voluptatum nesciunt illum exercitationem.",
-    },
+      image: SLIDER5,},
     {
-      image: heroImage1,
-      heading: "Slide Three",
-      desc: "This is the description of slide three Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi quos quas, voluptatum nesciunt illum exercitationem.",
-    },
+      image: SLIDER6,},
     {
-      image: heroImage1,
-      heading: "Slide Three",
-      desc: "This is the description of slide three Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi quos quas, voluptatum nesciunt illum exercitationem.",
-    },
+      image: SLIDER7,},
+    {
+      image: SLIDER8,},
+    {
+      image: SLIDER9,},
+    {
+      image: SLIDER10,},
+    {
+      image: SLIDER11,},
+    {
+      image: SLIDER12,},
   ];
   return (
     <div className='h-full bg-white '>

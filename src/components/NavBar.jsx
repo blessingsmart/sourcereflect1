@@ -33,7 +33,7 @@ const links = [
 ];
 
   return (
-    <div className='flex justify-between px-10 items-center w-full h-20 bg-gradient-to-r from-green-600 to-lime-600 fixed'>
+    <div className='flex justify-between px-10 items-center w-full h-20 bg-gradient-to-r from-green-600 to-lime-600 fixed z-20'>
       <div className='flex items-center'>
         <img src={logo} alt="mainlogo" className="w-12 h-12 mr-2" />
         <h1 className='text-2xl text-white'>SOURCE REFLECT</h1>

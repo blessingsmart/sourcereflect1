@@ -8,7 +8,6 @@ const Slider = ({ sliderData }) => {
   const autoScroll = true;
   const intervalTime = 5000;
 
-  // Wrap nextSlide and auto functions with useCallback
   const nextSlide = useCallback(() => {
     setCurrentSlide(currentSlide === slideLength - 1 ? 0 : currentSlide + 1);
     console.log("next");
@@ -19,10 +18,8 @@ const Slider = ({ sliderData }) => {
     console.log("prev");
   };
 
-  // Use useRef to store the interval reference
   const slideInterval = useRef(null);
 
-  // Wrap auto function with useCallback
   const auto = useCallback(() => {
     slideInterval.current = setInterval(nextSlide, intervalTime);
   }, [nextSlide]);
@@ -60,7 +57,7 @@ const Slider = ({ sliderData }) => {
                 <img
                   src={slide.image}
                   alt="slide"
-                  className="object-cover w-full h-full"
+                  className="object-cover w-full h-full rounded-md"
                 />
               </div>
             )}
