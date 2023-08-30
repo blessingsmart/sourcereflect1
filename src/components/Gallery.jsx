@@ -37,11 +37,11 @@ const Slider = ({ sliderData }) => {
   return (
     <div className="w-full h-[50vh] relative overflow-hidden">
       <AiOutlineArrowLeft
-        className="arrow prev absolute top-[35%] left-2 text-white border-2 border-white rounded-full cursor-pointer hover:bg-white hover:text-gray-700"
+        className="arrow prev absolute z-10 top-[35%] left-2 text-white border-2 border-white rounded-full cursor-pointer hover:bg-white hover:text-gray-700"
         onClick={prevSlide}
       />
       <AiOutlineArrowRight
-        className="arrow next absolute top-[35%] right-2 text-white border-2 border-white rounded-full cursor-pointer hover:bg-white hover:text-gray-700"
+        className="arrow next absolute z-10 top-[35%] right-2 text-white border-2 border-white rounded-full cursor-pointer hover:bg-white hover:text-gray-700"
         onClick={nextSlide}
       />
       {sliderData.map((slide, index) => {
@@ -53,7 +53,7 @@ const Slider = ({ sliderData }) => {
             key={index}
           >
             {index === currentSlide && (
-              <div className="relative h-full">
+              <div className="h-full">
                 <img
                   src={slide.image}
                   alt="slide"

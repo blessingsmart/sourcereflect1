@@ -33,10 +33,10 @@ const links = [
 ];
 
   return (
-    <div className='flex justify-between sm:px-10 items-center w-full h-20 bg-gradient-to-r from-green-600 to-lime-600 fixed z-20'>
+    <div className='flex justify-between sm:px-10 items-center w-full h-16 bg-gradient-to-r from-green-600 to-lime-600 fixed z-20'>
       <div className='flex items-center'>
-        <img src={logo} alt="mainlogo" className="w-12 h-12 mr-2" />
-        <h1 className='text-lg md:text-2xl text-white'>SOURCE REFLECT</h1>
+        <img src={logo} alt="mainlogo" className="w-10 h-10 mr-2" />
+        <h1 className='text-lg md:text-xl text-white'>SOURCE REFLECT</h1>
       </div>
       <ul className="hidden md:flex">
             {links.map(({id, link}) => (
