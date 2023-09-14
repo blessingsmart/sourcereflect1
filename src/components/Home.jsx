@@ -25,12 +25,7 @@ export const Home = () => {
           </div>
         </div>
 
-        <div className='flex flex-col sm:flex-row gap-10 mt-10 md:mt-40 md:pt-56 relative' style={{
-          backgroundImage: `url('../assets/heroImage1.png')`,
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center center',
-          backgroundSize: 'cover',
-        }}>
+        <div className='flex flex-col sm:flex-row gap-10 mt-10 md:mt-40 md:pt-56'>
           <a
             href={"https://www.linkedin.com/in/popoola-samson-343129b9"}
             target='_blank'

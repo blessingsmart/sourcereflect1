@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Slider from './Gallery';
 import SLIDER1 from "../assets/SLIDE1.jpeg"
 import SLIDER2 from "../assets/SLIDE2.jpeg"
-import SLIDER3 from "../assets/SLIDE3.jpeg"
+// import SLIDER3 from "../assets/SLIDE3.jpeg"
 import SLIDER4 from "../assets/SLIDE4.jpeg"
 import SLIDER5 from "../assets/SLIDE5.jpeg"
 import SLIDER6 from "../assets/SLIDE6.jpeg"
@@ -21,8 +21,8 @@ export const About = () => {
       image: SLIDER1,},
     {
       image: SLIDER2,},
-    {
-      image: SLIDER3,},
+    // {
+    //   image: SLIDER3,},
     {
       image: SLIDER4,},
     {

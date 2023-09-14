@@ -34,12 +34,13 @@ const Product = () => {
 
                 {
                 products.map(({ id, src, title}) => (
-                    <div key={id} className='shadow-md shadow-gray-600 rounded-lg'>
-                        <img src={src} alt='' className='rounded-md duration-200 hover:scale-105' />
-                        <div className='flex flex-col pb-2 items-center text-center justify-center'>
-                            <p className='w-1/2 py-3'>{title}</p >
-                            <button className='w-1/2 py-3 rounded-md border-2 border-white duration-200 hover:scale-105'>Order Now</button>
+                    <div key={id} className='shadow-md shadow-gray-600 '>
+                        <div className='relative'>
+                        <p className='w-full text-center py-3 absolute bottom-0 bg-gradient-to-t from-black to-black/5 '>{title}</p >
+                        <img src={src} alt='products' className='rounded-lg' />
                         </div>
+                        
+                        <button className='w-full bg-white text-green-600 py-3 rounded-md border-2 border-white duration-200 hover:scale-105'>Order Now</button>
                     </div>
                     ))}
             </div>    
