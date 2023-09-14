@@ -32,7 +32,7 @@ export const Contact = () => {
       href: 'https://instagram.com/sourcereflect?igshid=MmIzYWVlNDQ5Yg==',
     },
     {
-      id: 3,
+      id: 4,
       child: (
         <>
            <FaFacebook size={30}/>
@@ -59,11 +59,11 @@ export const Contact = () => {
         link: "About",
     },
     {
-        id: 4,   
+        id: 5,   
         link: "Shop",
     },
     {
-        id: 5,
+        id: 6,
         link: "Partner",
     },
 ];
