@@ -1,5 +1,6 @@
 import { NavBar } from "./components/NavBar";
 import {About} from "./components/About"
+import Product from "./components/Shop"
 import { Home } from "./components/Home";
 import { AboutMain } from "./Pages/AboutMain";
 import { Contact } from "./components/Contact";
@@ -15,6 +16,7 @@ function App() {
           <Route path="/AboutMain" element={<AboutMain />} />
         </Routes>
         <About />
+        <Product />
         <Contact />
       </div>
     </Router>
