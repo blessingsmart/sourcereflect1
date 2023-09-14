@@ -76,7 +76,7 @@ export const Contact = () => {
                     <p>Email: welldoericon@gmail.com</p>
                     <p>Phone: +234 708 451 9109</p>
                   </div>
-                  <ul className="pt-10 flex flex-col items-center">
+                  <ul className="pt-10 flex flex-col items-center text-center">
                       {links.map(({id, link}) => (
                           <li 
                               key={id} className='cursor-pointer capitalize font-medium hover:scale-105 duration-200'>
