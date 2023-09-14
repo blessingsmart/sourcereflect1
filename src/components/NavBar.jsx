@@ -27,7 +27,11 @@ const links = [
       link: "About",
   },
   {
-      id: 5,
+      id: 5,   
+      link: "Shop",
+  },
+  {
+      id: 6,
       link: "Contact",
   },
 ];

@@ -48,19 +48,23 @@ export const Contact = () => {
     },
     {
         id: 2,
-        link: "About",
-    },
-    {
-        id: 3,
-        link: "Partner",
-    },
-    {
-        id: 4,   
         link: "Testimonials",
     },
     {
-        id: 5,
+        id: 3,
         link: "Training Program",
+    },
+    {
+        id: 4,   
+        link: "About",
+    },
+    {
+        id: 4,   
+        link: "Shop",
+    },
+    {
+        id: 5,
+        link: "Partner",
     },
 ];
 
