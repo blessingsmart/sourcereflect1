@@ -4,7 +4,7 @@ import heroImage from "../assets/heroImage.png"
 import heroImage1 from "../assets/heroImage1.png"
 
 
-export const Home = () => {
+export const Hero = () => {
   return (
     <div className='h-full bg-gradient-to-r from-green-600 to-lime-600'>
 
@@ -59,4 +59,4 @@ export const Home = () => {
 }
 
 
-export default Home;
+export default Hero;
