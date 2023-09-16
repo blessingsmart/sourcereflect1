@@ -1,5 +1,7 @@
 import React from 'react'
 import NavBar from "../components/NavBar";
+import Mission from '../assets/mission.png'
+import Vision from '../assets/vision.png'
 
 export const AboutMain = () => {
   return (
@@ -10,18 +12,20 @@ export const AboutMain = () => {
           <p className="font-bold">WHO WE ARE</p>
           <p>Empowering Nigeria's Fisheries Sector for Socio-Economic Development!</p>
           <div className="flex md:gap-16 gap-10 lg:px-32 text-center">
-            <div className="bg-white w-1/2 p-10 rounded-lg">
-              <p className="text-blue-300 pb-5">Mission</p>
+            <div className="bg-white w-1/2 p-10 flex flex-col rounded-lg items-center">
+              <img src={Mission} alt="mission icon" className="w-1/5 pb-10" />
+              <p className="text-blue-300 pb-5 font-bold">Mission</p>
               <p className="text-gray-500">Our primary mission is to provide free training and education to schools, communities, and individuals across Nigeria, focusing on harnessing the country's resources for socio-economic development in the fisheries sector. With expertise in aquarium construction and design, aquaculture, fish feed formulation and production, as well as fish processing, we aim to equip participants with the knowledge and skills necessary to excel in these areas.</p>
             </div>
-            <div className="bg-white w-1/2 p-10 rounded-lg">
-              <p className="text-blue-300 pb-5">Vision</p>
+            <div className="bg-white w-1/2 p-10 flex flex-col items-center rounded-lg">
+              <img src={Vision} alt="vision icon" className="w-1/5 pb-10" />
+              <p className="text-blue-300 pb-5 font-bold">Vision</p>
               <p className="text-gray-500">At Sourcereflect, we envision a Nigeria where the fisheries sector becomes a catalyst for sustainable socio-economic growth. By empowering individuals and communities with the necessary tools and expertise, we aim to create a thriving industry that contributes to job creation, food security, environmental sustainability, and overall economic well-being.</p>
             </div>
           </div>
         </div>
         <div className="flex gap-5 flex-col pt-10 items-center text-white">
-          <p>Our Training Programs</p>
+          <p className="font-bold">Our Training Programs</p>
           <div className="grid md:gap-10 gap-5 text-center lg:grid-cols-4 sm:grid-cols-2 ">
             <div className="bg-white rounded-lg p-10">
               <p className="text-blue-300 pb-5">Aquarium Construction and Design</p>
