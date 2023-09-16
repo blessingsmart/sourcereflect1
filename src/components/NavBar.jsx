@@ -1,38 +1,48 @@
 import React, { useState } from 'react';
 import {FaBars, FaTimes} from 'react-icons/fa'
 import logo from "../assets/logo.png";
-import { Link } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 
 
 export const NavBar = () => {
 
   const [nav, setNav] = useState(false);
+
+  const scrollTo = (to) => {
+    setNav(false); // Close the mobile menu when clicking a link
+    scroll.scrollTo(to);
+  };
   
 const links = [
   {
       id: 1,
-      link: "Home",
+      link: "/",
+      title: "Home",
   },
-  {
-      id: 2,
-      link: "Testimonials",
-  },
-  {
-      id: 3,
-      link: "Trainings",
-  },
+//   {
+//       id: 2,
+//       link: "Testimonials",
+//   },
+//   {
+//       id: 3,
+//       link: "Trainings",
+//   },
   {
       id: 4,   
-      link: "About",
+      link: "/About",
+      title: "About",
   },
   {
       id: 5,   
-      link: "Shop",
+      to: "Shop",
+      title: "Shop",
   },
   {
       id: 6,
-      link: "Contact",
+      to: "Contact",
+      title: "Contact",
   },
 ];
 
@@ -43,10 +53,24 @@ const links = [
         <h1 className='text-lg md:text-xl text-white'>SOURCE REFLECT</h1>
       </div>
       <ul className="hidden md:flex">
-            {links.map(({id, link}) => (
+            {links.map(({id, link, title, to}) => (
                 <li 
                     key={id} className='px-4 cursor-pointer capitalize font-medium text-white hover:scale-105 duration-200'>
-                    <Link to={link} smooth duration={500}>{link} </Link>
+                    {to ? (
+                        <ScrollLink
+                        to={to}
+                        smooth="true"
+                        duration={500}
+                        className="cursor-pointer"
+                        onClick={() => scrollTo(to)}
+                        >
+                        {title}
+                        </ScrollLink>
+                    ) : (
+                        <RouterLink to={link} onClick={() => setNav(!nav)}>
+                        {title}
+                        </RouterLink>
+                    )}
                 </li>
             ))}      
       </ul>
@@ -58,10 +82,22 @@ const links = [
         {nav && (
             <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-r from-green-600 to-lime-600">
 
-                {links.map(({id, link}) => (
+                {links.map(({id, link, title, to}) => (
                     <li 
                         key={id} className='px-4 cursor-pointer text-white capitalize py-6 text-4xl'>
-                        <Link onClick={() => setNav(!nav)} to={link} smooth duration={500}>{link}</Link>
+                        {to ? (
+                        <ScrollLink
+                            to={to}
+                            smooth="true"
+                            duration={500}
+                            className="cursor-pointer"
+                            onClick={() => scrollTo(to)}
+                        >
+                            {title}
+                        </ScrollLink>
+                        ) : (
+                        <RouterLink to={link}>{title}</RouterLink>
+                        )}
                     </li>
                 ))} 
             </ul>

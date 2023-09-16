@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaInstagram, FaTwitter, FaWhatsapp, FaFacebook } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 export const Contact = () => {
   const social = [
@@ -44,32 +45,35 @@ export const Contact = () => {
   const links = [
     {
         id: 1,
-        link: "Home",
+        link: "/",
+        title: "Home",
     },
-    {
-        id: 2,
-        link: "Testimonials",
-    },
-    {
-        id: 3,
-        link: "Training Program",
-    },
+    // {
+    //     id: 2,
+    //     link: "Testimonials",
+    // },
+    // {
+    //     id: 3,
+    //     link: "Training Program",
+    // },
     {
         id: 4,   
-        link: "About",
+        link: "/About",
+        title:"About Us"
     },
     {
         id: 5,   
-        link: "Shop",
+        to: "Shop",
+        title: "Shop"
     },
-    {
-        id: 6,
-        link: "Partner",
-    },
+    // {
+    //     id: 6,
+    //     link: "Partner",
+    // },
 ];
 
   return (
-    <div className='bg-gradient-to-r from-green-600 to-lime-600 w-full'>
+    <div name="Contact" className='bg-gradient-to-r from-green-600 to-lime-600 w-full'>
       <div className='flex flex-col items-center sm:flex-row p-20 text-white sm:justify-between'>
                   <div className='flex flex-col items-center'> 
                     <h1 className='md:text-3xl text-lg text-blue-300 pb-5'>CONTACT US</h1>
@@ -77,10 +81,22 @@ export const Contact = () => {
                     <p>Phone: +234 708 451 9109</p>
                   </div>
                   <ul className="pt-10 flex flex-col items-center text-center">
-                      {links.map(({id, link}) => (
+                      {links.map(({id, link, title, to}) => (
                           <li 
                               key={id} className='cursor-pointer capitalize font-medium hover:scale-105 duration-200'>
-                              <Link to={link} smooth duration={500}>{link}</Link>
+                              {to ? (
+                              <ScrollLink
+                                  to={to}
+                                  smooth="true"
+                                  duration={500}
+                                  className="cursor-pointer"
+                                  onClick={() => scrollTo(to)}
+                              >
+                                  {title}
+                              </ScrollLink>
+                              ) : (
+                              <RouterLink to={link}>{title}</RouterLink>
+                              )}
                           </li>
                       ))}      
                   </ul>

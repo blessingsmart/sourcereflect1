@@ -4,7 +4,7 @@ const Loading = () => {
     return (
         <>
         <div className="h-screen flex items-center justify-center">
-            <div className="animate-spin w-32 h-32 border-8 border-gray-300 border-t-red-700 rounded-full "></div>
+            <div className="animate-spin w-32 h-32 border-8 border-gray-300 border-t-lime-600 rounded-full "></div>
         </div>
         </>
     );

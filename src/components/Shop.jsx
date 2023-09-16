@@ -23,7 +23,7 @@ const Product = () => {
     ]
 
   return (
-    <div className='bg-gradient-to-r from-green-600 to-lime-600 w-full text-white md:h-screen'>
+    <div name="Shop" className='bg-gradient-to-r from-green-600 to-lime-600 w-full text-white md:h-screen'>
         <div className='max-w-screen-lg p-4 mx-auto flex flex-col items-center justify-center w-full h-full '>
             <div className='py-8 items-center flex flex-col'>
                 <p className='text-4xl font-bold inline border-b-4 border-gray-500'>Shop</p>
