@@ -1,5 +1,5 @@
 import React from 'react'
-import Acqurium from '../assets/Acqurium.jpeg'
+import Aquarium from '../assets/Aquarium.jpeg'
 import Fishfeed from '../assets/Fishfeed.jpeg'
 import SmokeFish from '../assets/smokefish.jpeg'
 
@@ -7,7 +7,7 @@ const Product = () => {
     const products = [
         {
             id: 1,
-            src: Acqurium,
+            src: Aquarium,
             title:"Acqurium",
         },
         {
