@@ -4,6 +4,7 @@ import { createBrowserRouter }  from "react-router-dom";
 
 const Home = lazy(() => import("./Pages/Home"));
 const AboutMain = lazy(() => import("./Pages/AboutMain"));
+const Partner = lazy(() => import("./Pages/Partner"));
 
 const BrowserRouter = createBrowserRouter([
     {
@@ -15,10 +16,18 @@ const BrowserRouter = createBrowserRouter([
         ),
     },
     {
-        path: "/About",
+        path: "/about",
         element: (
             <React.Suspense fallback={<Loading />}>
                 <AboutMain />
+            </React.Suspense>
+        ),
+    },
+    {
+        path: "/partner-with-us",
+        element: (
+            <React.Suspense fallback={<Loading />}>
+                <Partner />
             </React.Suspense>
         ),
     },

@@ -31,8 +31,8 @@ const links = [
 //   },
   {
       id: 4,   
-      link: "/About",
-      title: "About",
+      link: "/about",
+      title: "About Us",
   },
   {
       id: 5,   
@@ -41,6 +41,11 @@ const links = [
   },
   {
       id: 6,
+      link: "/partner-with-us",
+      title: "Partner With Us",
+  },
+  {
+      id: 7,
       to: "Contact",
       title: "Contact",
   },

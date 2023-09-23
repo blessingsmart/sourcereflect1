@@ -52,13 +52,14 @@ export const Contact = () => {
     //     id: 2,
     //     link: "Testimonials",
     // },
-    // {
-    //     id: 3,
-    //     link: "Training Program",
-    // },
+    {
+        id: 3,
+        link: "Training Program",
+        title: "Training Programs"
+    },
     {
         id: 4,   
-        link: "/About",
+        link: "/about",
         title:"About Us"
     },
     {
@@ -66,10 +67,11 @@ export const Contact = () => {
         to: "Shop",
         title: "Shop"
     },
-    // {
-    //     id: 6,
-    //     link: "Partner",
-    // },
+    {
+        id: 6,
+        link: "/partner-with-us",
+        title: "Partner With Us"
+    },
 ];
 
   return (

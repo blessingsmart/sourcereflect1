@@ -17,7 +17,7 @@ export const Hero = () => {
             Empowering Nigeria's Fisheries Sector for Socio-Economic Development!
           </p>
           <div>
-            <Link to="/">
+            <Link to="/partner-with-us">
               <button className='group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md border-2 border-white cursor-pointer'>
                 PARTNER
               </button>

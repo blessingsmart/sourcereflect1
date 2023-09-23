@@ -55,7 +55,7 @@ export const About = () => {
             <h1 className='my-5 text-2xl'> Mission</h1>
             <p className=' text-gray-500'>Our primary mission is to provide free training and education to schools, communities, and individuals across Nigeria, focusing on harnessing the country's resources for socio-economic development in the fisheries sector. With expertise in aquarium construction and design, aquaculture, fish feed formulation and production, as well as fish processing, we aim to equip participants with the knowledge and skills necessary to excel in these areas.</p>
           </div>
-          <Link to="/" className='flex text-blue-300 cursor-pointer items-center justify-end'>See More <BsArrowRight/> </Link>
+          <Link to="/about" className='flex text-blue-300 cursor-pointer items-center justify-end'>See More <BsArrowRight/> </Link>
         </div>
       </div>
     </div>
