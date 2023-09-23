@@ -10,7 +10,7 @@ export const AboutMain = () => {
     <>
       <NavBar />
       <div className="w-screen h-full">
-        <div className="flex gap-5 flex-col items-center text-center text-green-600 mx-auto p-16">
+        <div className="flex gap-5 flex-col items-center text-center text-green-600 mx-auto sm:p-16 p-10">
           <p className="font-bold text-4xl pt-10 ">WHO WE ARE</p>
           <p className="font-bold">Empowering Nigeria's Fisheries Sector for Socio-Economic Development!</p>
           <div className="grid grid-row md:grid-cols-2 md:gap-16 gap-10 lg:px-32 ">
@@ -27,7 +27,7 @@ export const AboutMain = () => {
           </div>
         </div>
       < Training />
-      <div className="p-20 w-screen">
+      <div className="sm:p-20 p-10 w-screen">
         <p className="text-2xl py-10 font-bold">Why Choose Sourcereflect?</p>
         <div className="grid md:grid-cols-2 gap-10">
           <div className='bg-gray-200 p-10'>
