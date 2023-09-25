@@ -1,7 +1,7 @@
 import React from 'react'
 import NavBar from "../components/NavBar";
 import  Contact  from "../components/Contact";
-import  partner  from "../assets/partner.jpg";
+import  partner  from "../assets/SLIDE12.jpeg";
 import  trainingprogram  from "../assets/trainingprogram.jpg";
 import  Volunteer  from "../assets/volunteer.jpg";
 import  donate  from "../assets/donate.jpg";
@@ -28,12 +28,8 @@ const Partner = () => {
             <button className="bg-gradient-to-r from-green-600 to-lime-600 rounded-full text-white py-2 px-5 w-fit">Sign Up</button>
           </div>
           <img src={trainingprogram} alt="Training" className="rounded-lg order-1 md:order-2" />
-          <img src={Volunteer} alt="volunteer" className="rounded-lg order-3" />
+          <img src={donate} alt="donate" className="rounded-lg order-3" />
           <div className="flex flex-col order-4">
-            <p>Volunteer your time and expertise to support our training initiatives.</p>
-            <button className="bg-gradient-to-r from-green-600 to-lime-600 rounded-full text-white py-2 px-5 w-fit">Sign Up</button>
-          </div>
-          <div className="flex flex-col order-6 md:order-5">
             <p>Donate resources, equipment, or funds to help us expand our reach and impact.</p>
             <div className="items-center font-bold text-xl flex flex-col">
             <p>ACCOUNT DETAILS</p>
@@ -42,7 +38,11 @@ const Partner = () => {
             <p>0742180735</p>
             </div>
           </div>
-          <img src={donate} alt="donate" className="rounded-lg order-5 md:order-6" />
+          <div className="flex flex-col order-6 md:order-5">
+            <p>Volunteer your time and expertise to support our training initiatives.</p>
+            <button className="bg-gradient-to-r from-green-600 to-lime-600 rounded-full text-white py-2 px-5 w-fit">Sign Up</button>
+          </div>
+          <img src={Volunteer} alt="volunteer" className="rounded-lg order-5 md:order-6" />
           <img src={collaboration} alt="collaborate" className="rounded-lg order-7" />
           <div className="flex flex-col order-8">
             <p>Collaborate with us on research projects, advocacy efforts, or community development programs.</p>
