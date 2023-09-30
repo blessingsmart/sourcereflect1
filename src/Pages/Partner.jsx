@@ -40,7 +40,9 @@ const Partner = () => {
           </div>
           <div className="flex flex-col order-6 md:order-5">
             <p>Volunteer your time and expertise to support our training initiatives.</p>
+            <a  href="https://t.me/sourcereflect1 " target="_blank" rel="noopener noreferrer" >
             <button className="bg-gradient-to-r from-green-600 to-lime-600 rounded-full text-white py-2 px-5 w-fit">Sign Up</button>
+            </a>
           </div>
           <img src={Volunteer} alt="volunteer" className="rounded-lg order-5 md:order-6" />
           <img src={collaboration} alt="collaborate" className="rounded-lg order-7" />
