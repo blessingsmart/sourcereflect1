@@ -2,6 +2,7 @@ import React from 'react'
 import Aquarium from '../assets/Aquarium.jpeg'
 import Fishfeed from '../assets/Fishfeed.jpeg'
 import SmokeFish from '../assets/smokefish.jpeg'
+import {FaWhatsapp } from "react-icons/fa";
 
 const Product = () => {
     const products = [
@@ -39,8 +40,9 @@ const Product = () => {
                         <p className='w-full text-center py-3 absolute bottom-0 bg-gradient-to-t from-black to-black/5 '>{title}</p >
                         <img src={src} alt='products' className='rounded-lg' />
                         </div>
-                        
-                        <button className='w-full bg-white text-green-600 py-3 rounded-md border-2 border-white duration-200 hover:scale-105'>Order Now</button>
+                        <a  href="https://wa.me/message/YL3HPLETTPM5O1?src=qr " target="_blank" rel="noopener noreferrer" >                       
+                        <button className='w-full bg-white text-green-600 py-3 rounded-b-md border-2 border-white duration-200 hover:scale-105 flex justify-center items-center gap-2'>Order Now <FaWhatsapp /></button>
+                        </a>
                     </div>
                     ))}
             </div>    
