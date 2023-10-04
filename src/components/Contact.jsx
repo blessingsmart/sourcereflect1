@@ -48,6 +48,7 @@ export const Contact = () => {
                     <div className='flex flex-col md:flex-row md:gap-2 items-center'>
                       <p className='font-medium'>Phone:</p><p> +234 708 451 9109</p>
                     </div>
+                    <p> +234 816 670 6620</p>
                   </div>
                   <ul className="pt-10 flex flex-col items-center text-center">
                       {links.map(({id, link, title, to}) => (
