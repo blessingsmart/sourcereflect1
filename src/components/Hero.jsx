@@ -2,14 +2,18 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import heroImage from "../assets/heroImage.png"
 import heroImage1 from "../assets/heroImage1.png"
+import logo from "/logo.png"
 
 
 export const Hero = () => {
   return (
-    <div className='h-full bg-gradient-to-r from-green-600 to-lime-600'>
+    <div className='relative h-full bg-gradient-to-r from-green-600 to-lime-600'>
 
-      <div className='max-w-screen-lg md:mx-auto mx-10 flex flex-col items-center justify-center pt-5 md:flex-row md:gap-32'>
-        <div className="flex flex-col justify-center h-full">
+          <div className=" absolute hidden md:block right-0 mx-auto h-full ">
+            <img src={logo} alt="logo" className='opacity-25' />
+          </div>
+      <div className='z-20 max-w-screen-lg md:mx-auto mx-10 flex flex-col items-center justify-center pt-5 md:flex-row md:gap-32'>
+        <div className=" z-20 flex flex-col justify-center h-full">
           <h2 className="text-4xl sm:text-6xl font-bold text-white mt-20 md:mt-0">
             Welcome to Sourcereflect
           </h2>
@@ -25,7 +29,7 @@ export const Hero = () => {
           </div>
         </div>
 
-        <div className='flex flex-col sm:flex-row gap-10 mt-10 md:mt-40 md:pt-56'>
+        <div className='z-20 flex flex-col sm:flex-row gap-10 mt-10 md:mt-40 md:pt-56'>
           <a
             href={"https://www.linkedin.com/in/popoola-samson-343129b9"}
             target='_blank'

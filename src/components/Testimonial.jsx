@@ -27,7 +27,7 @@ const Testimonial = () => {
   }, []); // Use an empty dependency array to run this effect only once.
 
   return (
-    <div className="splide p-16 bg-gradient-to-r from-green-600 to-lime-600 text-white font-medium text-xs md:text-sm">
+    <div name="Testimonials" className="splide p-16 bg-gradient-to-r from-green-600 to-lime-600 text-white font-medium text-xs md:text-sm">
       <div className="splide__track">
         <ul className="splide__list"> 
           <li className="splide__slide px-5">

@@ -10,10 +10,11 @@ export const Contact = () => {
         link: "/",
         title: "Home",
     },
-    // {
-    //     id: 2,
-    //     link: "Testimonials",
-    // },
+    {
+        id: 2,
+        to: "Testimonials",
+        title: "Testimonials",
+    },
     {
         id: 3,
         link: "Training Program",
@@ -39,10 +40,14 @@ export const Contact = () => {
   return (
     <div name="Contact" className='bg-gradient-to-r from-green-600 to-lime-600 w-full'>
       <div className='flex flex-col items-center sm:flex-row p-20 text-white sm:justify-between'>
-                  <div className='flex flex-col items-center'> 
+                  <div className='flex flex-col items-center gap-2'> 
                     <h1 className='md:text-3xl text-lg text-blue-300 pb-5'>CONTACT US</h1>
-                    <p>Email: welldoericon@gmail.com</p>
-                    <p>Phone: +234 708 451 9109</p>
+                    <div className='flex flex-col md:flex-row md:gap-2 items-center'>
+                      <p className='font-medium'>Email:</p> <p>welldoericon@gmail.com</p>
+                    </div>
+                    <div className='flex flex-col md:flex-row md:gap-2 items-center'>
+                      <p className='font-medium'>Phone:</p><p> +234 708 451 9109</p>
+                    </div>
                   </div>
                   <ul className="pt-10 flex flex-col items-center text-center">
                       {links.map(({id, link, title, to}) => (
