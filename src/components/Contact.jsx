@@ -91,6 +91,13 @@ export const Contact = () => {
                           ))} 
                         </ul>
             </div>
+      </div>
+      <div className='text-white p-5 flex justify-center gap-2 text-sm'>Copyright © 2023. Made with 💚 by 
+         <a
+            href='https://blessing-eno.netlify.app/'
+            target='_blank'
+            rel='noopener noreferrer'
+         > Blessing</a>
       </div>      
     </div>
   )
