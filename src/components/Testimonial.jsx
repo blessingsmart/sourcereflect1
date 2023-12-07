@@ -3,6 +3,7 @@ import Splide from '@splidejs/splide';
 import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 import '@splidejs/react-splide/css';
 import usman from "../assets/usman.jpg"
+import teacher from "../assets/teacher.jpg"
 
 
 const Testimonial = () => {
@@ -50,7 +51,7 @@ const Testimonial = () => {
              <p>We appreciate the skills and knowledge you impacted on us in the field of fishery as a trade subject as required by the scheme of work in the school.</p>
              <p>We are very grateful for all your efforts in the past two terms and look forward to more cordial practical sessions in the future</p>
              <div className='flex items-center gap-3'>
-             <img src={usman} alt="Image 1" className='rounded-full sm:h-20 sm:w-20 w-12 h-12'/>
+             <img src={teacher} alt="Image 1" className='rounded-full sm:h-20 sm:w-20 w-12 h-12'/>
              <div className='flex flex-col text-xs'>
               <p className='text-gray-200'>Mr Orowale Clement</p>
               <p>Agricultural Teacher</p>
