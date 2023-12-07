@@ -8,7 +8,7 @@ import teacher from "../assets/teacher.jpg"
 
 const Testimonial = () => {
   useEffect(() => {
-    // Initialize the Splide slider and configure it.
+
     const splide = new Splide('.splide', {
       type: 'loop',
       drag: 'free',
@@ -23,9 +23,8 @@ const Testimonial = () => {
       },
     });
 
-    // Mount the AutoScroll extension.
     splide.mount({ AutoScroll });
-  }, []); // Use an empty dependency array to run this effect only once.
+  }, []); 
 
   return (
     <div name="Testimonials" className="splide p-16 bg-gradient-to-r from-green-600 to-lime-600 text-white font-medium text-xs md:text-sm">
