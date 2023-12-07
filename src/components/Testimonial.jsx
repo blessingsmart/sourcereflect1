@@ -53,7 +53,7 @@ const Testimonial = () => {
              <img src={usman} alt="Image 1" className='rounded-full sm:h-20 sm:w-20 w-12 h-12'/>
              <div className='flex flex-col text-xs'>
               <p className='text-gray-200'>Mr Orowale Clement</p>
-              <p>Agricultural teacher</p>
+              <p>Agricultural Teacher</p>
               <p>Koramo secondary school</p>
              </div>
              </div>
