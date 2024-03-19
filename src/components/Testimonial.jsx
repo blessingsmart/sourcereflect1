@@ -4,6 +4,7 @@ import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 import '@splidejs/react-splide/css';
 import usman from "../assets/usman.jpg"
 import teacher from "../assets/teacher.jpg"
+import akiola from "../assets/akiola1.jpg"
 
 
 const Testimonial = () => {
@@ -54,6 +55,21 @@ const Testimonial = () => {
              <div className='flex flex-col text-xs'>
               <p className='text-gray-200'>Mr Orowale Clement</p>
               <p>Agricultural Teacher</p>
+              <p>Koramo secondary school</p>
+             </div>
+             </div>
+            </div>
+          </li>
+          <li className="splide__slide px-5">
+            <div className='flex flex-col gap-2'> 
+             <p>hands-on involvement in fishery practices has improved my academic journey. Despite excelling in most subjects at Kuramo Senior College, my performance in fisheries studies lagged behind, causing frustration and disappointment. However, everything changed when Mr. Samson and his team introduced practical fishery sessions at our school.</p>
+             <p>Engaging in activities like fish feeds formulations, Aquarium construction and design, fish culturing and aquatic habitat assessments provided invaluable insights that textbooks alone couldn't offer. Through these practical experiences, I gained a deeper understanding of fish behavior, habitat requirements, and industry challenges, bridging the gap between theory and practice.</p>
+             <p>Beyond academic enrichment, practical experience honed my problem-solving skills, critical thinking, and personal growth. Learning skills that aid a solid foundation for future career success.</p>
+             <p>I am much grateful for the opportunity 🙏</p>
+             <div className='flex items-center gap-3'>
+             <img src={akiola} alt="Image 1" className='rounded-full sm:h-20 sm:w-20 w-12 h-12'/>
+             <div className='flex flex-col text-xs'>
+              <p className='text-gray-200'>Akiola Modupe Summayyah</p>
               <p>Koramo secondary school</p>
              </div>
              </div>
