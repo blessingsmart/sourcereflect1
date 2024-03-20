@@ -62,10 +62,8 @@ const Testimonial = () => {
           </li>
           <li className="splide__slide px-5">
             <div className='flex flex-col gap-2'> 
-             <p>hands-on involvement in fishery practices has improved my academic journey. Despite excelling in most subjects at Kuramo Senior College, my performance in fisheries studies lagged behind, causing frustration and disappointment. However, everything changed when Mr. Samson and his team introduced practical fishery sessions at our school.</p>
-             <p>Engaging in activities like fish feeds formulations, Aquarium construction and design, fish culturing and aquatic habitat assessments provided invaluable insights that textbooks alone couldn't offer. Through these practical experiences, I gained a deeper understanding of fish behavior, habitat requirements, and industry challenges, bridging the gap between theory and practice.</p>
-             <p>Beyond academic enrichment, practical experience honed my problem-solving skills, critical thinking, and personal growth. Learning skills that aid a solid foundation for future career success.</p>
-             <p>I am much grateful for the opportunity 🙏</p>
+             <p>Hands-on fishery involvement improved my academics. Excelling in most subjects at Kuramo Senior College, I struggled in fisheries until practical sessions with Mr. Samson. Activities like fish feed formulations, aquarium design, fish culturing, and habitat assessments provided insights textbooks couldn't. This practical experience deepened my understanding of fish behavior, habitat requirements, and industry challenges, bridging theory and practice.</p>
+             <p>The experience also honed my problem-solving skills, critical thinking, and personal growth, laying a foundation for future success. Grateful for the opportunity.</p>
              <div className='flex items-center gap-3'>
              <img src={akiola} alt="Image 1" className='rounded-full sm:h-20 sm:w-20 w-12 h-12'/>
              <div className='flex flex-col text-xs'>
