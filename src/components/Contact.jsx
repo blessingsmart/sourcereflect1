@@ -15,11 +15,11 @@ export const Contact = () => {
         to: "Testimonials",
         title: "Testimonials",
     },
-    {
-        id: 3,
-        link: "Training Program",
-        title: "Training Programs"
-    },
+    // {
+    //     id: 3,
+    //     link: "Training Program",
+    //     title: "Training Programs"
+    // },
     {
         id: 4,   
         link: "/about",
@@ -60,7 +60,6 @@ export const Contact = () => {
                                   smooth="true"
                                   duration={500}
                                   className="cursor-pointer"
-                                  onClick={() => scrollTo(to)}
                               >
                                   {title}
                               </ScrollLink>
