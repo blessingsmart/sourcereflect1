@@ -43,7 +43,7 @@ export const Contact = () => {
                   <div className='flex flex-col items-center gap-2'> 
                     <h1 className='md:text-3xl text-lg text-blue-300 pb-5'>CONTACT US</h1>
                     <div className='flex flex-col md:flex-row md:gap-2 items-center'>
-                      <p className='font-medium'>Email:</p> <p>sourcereflect@proton.me</p>
+                      <p className='font-medium'>Email:</p> <p>source@sourcereflect.com</p>
                     </div>
                     <div className='flex flex-col md:flex-row md:gap-2 items-center'>
                       <p className='font-medium'>Phone:</p><p> +234 708 451 9109</p>
